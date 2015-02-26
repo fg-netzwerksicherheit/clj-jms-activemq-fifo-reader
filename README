@@ -1,0 +1,11 @@
+
+mkfifo test.reader.fifo
+mkfifo test.writer.fifo
+
+java -jar clj-jms-activemq-toolkit-1.99.0-standalone.jar -d &
+# Je nach Rechner benötigt der Start unterschiedliche lang.
+java -jar clj-jms-activemq-fifo-reader-0.1.0-SNAPSHOT-standalone.jar -d &
+java -jar target/clj-jms-activemq-fifo-writer-0.1.0-SNAPSHOT-standalone.jar -d &
+
+
+
