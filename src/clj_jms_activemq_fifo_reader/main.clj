@@ -17,7 +17,7 @@
                        :default "test.fifo.topic"]
                       ["-f" "--file"
                        "Name of the file/fifo from where the data is read."
-                       :default "test.fifo"]
+                       :default "test.reader.fifo"]
                       ["-h" "--help" "Print this help." :flag true])
         arg-map (cli-args 0)
         extra-args (cli-args 1)
