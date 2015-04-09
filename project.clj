@@ -6,5 +6,5 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/tools.cli "0.2.4"]
                  [fg-netzwerksicherheit/clj-jms-activemq-toolkit "1.99.0"]
-                 [clj-assorted-utils "1.9.0-SNAPSHOT"]]
+                 [clj-assorted-utils "1.9.0"]]
   :main clj-jms-activemq-fifo-reader.main)
