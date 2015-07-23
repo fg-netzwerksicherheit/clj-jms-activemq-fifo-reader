@@ -21,9 +21,13 @@ Start the fifo reader:
 
     java -jar clj-jms-activemq-fifo-reader-0.1.0-SNAPSHOT-standalone.jar
 
+You can download a pre-built Jar file from: https://github.com/fg-netzwerksicherheit/clj-jms-activemq-fifo-reader/blob/master/dist/clj-jms-activemq-fifo-reader-0.1.0-SNAPSHOT-standalone.jar?raw=true
+
 Start the fifo writer:
 
     java -jar clj-jms-activemq-fifo-writer-0.1.0-SNAPSHOT-standalone.jar
+
+You can download a pre-built Jar file from: https://github.com/fg-netzwerksicherheit/clj-jms-activemq-fifo-writer/blob/master/dist/clj-jms-activemq-fifo-writer-0.1.0-SNAPSHOT-standalone.jar?raw=true
 
 Read from the fifo:
 
