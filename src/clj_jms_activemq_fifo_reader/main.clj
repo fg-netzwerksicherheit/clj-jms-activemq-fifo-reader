@@ -1,4 +1,15 @@
-(ns clj-jms-activemq-fifo-reader.main
+;;;
+;;;   Copyright 2015, Frankfurt University of Applied Sciences
+;;;
+;;;   This software is released under the terms of the Eclipse Public License 
+;;;   (EPL) 1.0. You can find a copy of the EPL at: 
+;;;   http://opensource.org/licenses/eclipse-1.0.php
+;;;
+
+(ns
+  ^{:author "Ruediger Gad",
+    :doc "Main class"}
+  clj-jms-activemq-fifo-reader.main
   (:use clojure.pprint
         [clojure.string :only [join split]]
         clojure.tools.cli
@@ -34,11 +45,11 @@
                         (producer :close)
                         (lineseq-rdr))]
       (if (:daemon arg-map)
-            (-> (agent 0) (await))
-            (do
-              (println "FIFO reader started... Type \"q\" followed by <Return> to quit: ")
-              (while (not= "q" (read-line))
-                (println "Type \"q\" followed by <Return> to quit: "))
-              (println "Shutting down...")
-              (shutdown-fn))))))
+        (-> (agent 0) (await))
+        (do
+          (println "FIFO reader started... Type \"q\" followed by <Return> to quit: ")
+          (while (not= "q" (read-line))
+            (println "Type \"q\" followed by <Return> to quit: "))
+          (println "Shutting down...")
+          (shutdown-fn))))))
 
